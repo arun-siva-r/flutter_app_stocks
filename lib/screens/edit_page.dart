@@ -41,8 +41,9 @@ class EditPageState extends State<EditPage> {
       builder: (BuildContext context, ScrollController controller) {
         return Scaffold(
           body: Container(
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.only(
+            decoration: BoxDecoration(
+              color: Theme.of(context).primaryColor,
+              borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(16.0),
                   topRight: Radius.circular(16.0)),
             ),
