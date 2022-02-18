@@ -39,9 +39,9 @@ class EditPageState extends State<EditPage> {
       minChildSize: 0.95,
       initialChildSize: 0.95,
       builder: (BuildContext context, ScrollController controller) {
-        return Scaffold(
-          backgroundColor: Colors.transparent,
-          body: Container(
+        return Card(
+          child: Container(
+            clipBehavior: Clip.antiAlias,
             decoration: BoxDecoration(
               color: Theme.of(context).primaryColor,
               borderRadius: const BorderRadius.only(
