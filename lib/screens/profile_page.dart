@@ -123,16 +123,6 @@ class ProfilePageState extends State<ProfilePage> {
                         value: value,
                       );
                     }) as ProfileDetails;
-
-                // _profileProvider.profileDetails = await Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //         fullscreenDialog: true,
-                //         builder: (BuildContext context) => EditPage(
-                //               fieldName: label,
-                //               value: value,
-                //               profileDetails: _profileProvider.profileDetails,
-                //             )));
               },
             )
           ],

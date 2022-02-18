@@ -40,12 +40,13 @@ class EditPageState extends State<EditPage> {
       initialChildSize: 0.95,
       builder: (BuildContext context, ScrollController controller) {
         return Scaffold(
+          backgroundColor: Colors.transparent,
           body: Container(
             decoration: BoxDecoration(
               color: Theme.of(context).primaryColor,
               borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(16.0),
-                  topRight: Radius.circular(16.0)),
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0)),
             ),
             child: Stack(
               children: <Widget>[
@@ -82,9 +83,10 @@ class EditPageState extends State<EditPage> {
                         children: <Widget>[
                           widget.fieldName == 'Email'
                               ? Text(
-                                  'We\'ll send you an email to confirm you new email address',
-                                  style: Theme.of(context).textTheme.subtitle1,
-                                )
+                            'We\'ll send you an email to confirm you new email address',
+                            style:
+                            Theme.of(context).textTheme.subtitle1,
+                          )
                               : Container(),
                           SizedBox(
                             height: widget.fieldName == 'Email' ? 20 : 0,

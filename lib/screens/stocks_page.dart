@@ -71,7 +71,7 @@ class StocksPageState extends State<StocksPage> {
                       _getRow('Extended hrs',
                           _getTimeValue(currentDetails.extendedHours)),
                       _getRow(
-                          '%Change',
+                          '% Change',
                           percentage.isNegative
                               ? percentage.toStringAsFixed(1)
                               : '+' + percentage.toStringAsFixed(1),
